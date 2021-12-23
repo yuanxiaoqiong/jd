@@ -1,0 +1,266 @@
+.login_w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.icon_link {
+    height: 80px;
+    .icon_img {
+        float: left;
+        margin-top: 10px;
+        width: 170px;
+        height: 60px;
+        background: url(../images/login/logo-201305-b.png);
+    }
+    .huanying_login {
+        float: left;
+        width: 110px;
+        height: 40px;
+        background-color: #fff;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+    .wenjuan {
+        float: right;
+        margin-top: 50px;
+        a {
+            margin-left: 5px;
+            &:hover {
+                color: #e1251a;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.yinsi {
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #fff8f0;
+    img {
+        vertical-align: middle;
+    }
+    span {
+        color: #999;
+    }
+    a {
+        color: #333; 
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.login {
+    height: 495px;
+    background: url(../images/login/bg.jpg);
+    .login_box {
+        float: right;
+        width: 345px;
+        margin-top: 10px;
+        background-color: #cce8cf;
+        .tip {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #fff8f0;
+            color: #999;
+        }
+        .login_tab {
+            display: flex;
+            height: 55px;
+            border-bottom: 1px solid #fff;
+            .cure {
+                color: #e1251a;
+                font-weight: 700;
+            }
+            h2 {
+                line-height: 55px;
+                text-align: center;
+                width: 50%;
+                cursor: pointer;
+                color: #777;
+                font-weight: 400;
+                &:hover {
+                    color: #e1251a;
+                    font-weight: 700;
+                }
+            }
+            span {
+                line-height: 55px;
+                color: #fff;
+                font-size: 18px;
+            }
+        }
+        .login_tab_item {
+            position: relative;
+            height: 300px;
+            border-bottom: 1px solid #fff;
+            .saoma {
+                // display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                text-align: center;
+                width: 345px;
+                .saoma_img {
+                    height: 170px;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    // background-color: pink;
+                }
+                .code_img {
+                    float: left;
+                    width: 170px;
+                    height: 170px;
+                    border: 1px solid #fff;
+                    margin-left: 80px;
+                    img {
+                        margin:  11.5px;
+                    }
+                }
+                .phone_img {
+                    display: none;
+                    margin-left: 10px;
+                    float: left;
+                }
+                .code_tip {
+                    clear: both;
+                    a {
+                        color: #e4393c;
+                    }
+                }
+                .safe {
+                    margin-top: 10px;
+                    height: 30px;
+                    line-height: 30px;
+                    span {
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                    .shuru,.fast,.safer {
+                            display: inline-block;
+                            width: 25px;
+                            height: 25px;
+                            margin-top: 2.5px;
+                            background: url(../images/login/qr-coagent.png) no-repeat 0 0;
+                            vertical-align: text-bottom;
+                        }
+                    .fast {
+                            background: url(../images/login/qr-coagent.png) no-repeat -26px 0;
+                        }
+                    .fast {
+                            background: url(../images/login/qr-coagent.png) no-repeat -54px 0;
+                        }
+                   
+                }
+            }
+            .zhanghu {
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                .tel,.password {
+                    display: inline-block;
+                    width: 305px;
+                    height: 38px;
+                    border: 1px solid #999;
+                    margin: 30px 20px 0;
+                    padding-left: 50px;
+                }
+                .tel_icon,.password_icon {
+                    position: absolute;
+                    top: 31px;
+                    left: 22px;
+                    width: 36px;
+                    height: 36px;
+                    border-right: 1px solid #999;
+                    background: url(../images/login/pwd-icons-new.png) no-repeat 0 0;
+                }
+                .password {
+                    margin-top: 20px;
+                }
+                .password_icon {
+                    position: absolute;
+                    top: 89px;
+                    left: 20px;
+                    background: url(../images/login/pwd-icons-new.png) no-repeat -47px 0;
+                }
+                .forget_passeord {
+                    float: right;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                }
+                button {
+                    width: 305px;
+                    height: 35px;
+                    margin: 30px 20px 0;
+                    background-color: #e85356;
+                    color: #fff;
+                    font-size: 20px;
+    
+                }
+            }
+            
+        }
+        .bot {
+            height: 50px;
+            line-height: 50px;
+            a {
+                float: left;
+            }
+            .qq {
+                float: left;
+                height: 19px;
+                width: 19px;
+                margin: 16px 5px 0 20px;
+                background: url(../images/login/QQ-weixin.png) no-repeat 0 0;
+            }
+            span {
+                float: left;
+                margin: auto 5px;
+                color: #999;
+            }
+            .wx {
+                float: left;
+                height: 19px;
+                width: 19px;
+                margin: 16px 5px 0 0px;
+                background: url(../images/login/QQ-weixin.png) no-repeat -19px 0;
+            }
+            .zhuce {
+                float: left;    
+                height: 20px;
+                width: 24px;
+                margin: 14px 5px 0 100px;
+                background: url(../images/login/pwd-icons-new.png) no-repeat -100px -71px;
+            }
+            .zhuce_link {
+                float: right;
+                margin-right: 20px;
+                color: #cd282c;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.jd_foot {
+    height: 100px;
+    clear: both;
+    margin-top: 20px;
+    .kefu {
+        display: flex;
+        margin-left: 35px;
+        margin-bottom: 20px;
+        justify-content: center;
+        li {
+            span {
+                margin: 0 10px;
+            }
+        }
+    }
+}

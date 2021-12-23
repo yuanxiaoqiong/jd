@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8" version='1' />
+    <title>京东商城 购物车</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <meta name="description" content="京东JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,京东" />
+    <link rel="icon" href="images/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/shopcar.css">
+    <script src="js/jquery-2.2.4.js"></script>
+  <script type="text/javascript" src="./js/layer-master/src/layer.js"></script><!-- 下面的cart.js里也使用了$符号,冲突了,去改变运行cart.js的$ -->
+</head>
+
+<body>
+    <!-- 头部个人信息模块 start -->
+    <header class="user" id="user">
+        <div class="w1">
+            <div class="jd_shouye">
+                <a href="index.html">京东首页</a>
+            </div>
+
+            <div class="location">
+                <span class="local_name">山西</span>
+                <div class="loca">
+                    <ul class="loca_items">
+                        <li>北京</li>
+                        <li>上海</li>
+                        <li>天津</li>
+                        <li>重庆</li>
+                        <li>河北</li>
+                        <li class="red_loc">山西</li>
+                        <li>河南</li>
+                        <li>辽宁</li>
+                        <li>吉林</li>
+                        <li>黑龙江</li>
+                        <li>内蒙古</li>
+                        <li>江苏</li>
+                        <li>山东</li>
+                        <li>安徽</li>
+                        <li>浙江</li>
+                        <li>福建</li>
+                        <li>湖北</li>
+                        <li>湖南</li>
+                        <li>广东</li>
+                        <li>广西</li>
+                        <li>江西</li>
+                        <li>四川</li>
+                        <li>海南</li>
+                        <li>贵州</li>
+                        <li>云南</li>
+                        <li>西藏</li>
+                        <li>陕西</li>
+                        <li>甘肃</li>
+                        <li>青海</li>
+                        <li>宁夏</li>
+                        <li>新疆</li>
+                        <li>港澳</li>
+                        <li>台湾</li>
+                        <li>钓鱼岛</li>
+                        <li>海外</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="login">
+                <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=https%3A%2F%2Fwww.jd.com%2F" class="user_login">你好，请登录</a>
+                <a href="https://reg.jd.com/reg/person?ReturnUrl=https%3A//www.jd.com/" class="register red">&nbsp;&nbsp;免费注册</a>
+            </div>
+            <ul class="user_tab_items">
+                <li class="shuxian">|</li>
+
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li class="tab_item">
+                    <a href="javascript:;" class="current">我的京东</a>
+                    <div class="user_tab_menu user_tab_1">
+                        <ul class="myjd_top flex_2">
+                            <li><a href="javascript:;">待处理订单</a></li>
+                            <li><a href="javascript:;">我的问答</a></li>
+                            <li><a href="javascript:;">返修退换货</a></li>
+                            <li><a href="javascript:;">我的关注</a></li>
+                            <li><a href="javascript:;">降价商品</a></li>
+                        </ul>
+                        <ul class="myjd_btm flex_2">
+                            <li><a href="javascript:;">我的京豆</a></li>
+                            <li><a href="javascript:;">我的优惠券</a></li>
+                            <li><a href="javascript:;">我的白条</a></li>
+                            <li><a href="javascript:;">我的理财</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li>
+                    <a href="javascript:;">京东会员</a>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li class="tab_item">
+                    <a href="javascript:;" class="red">企业采购</a>
+                    <div class="user_tab_menu user_tab_2">
+                        <ul class="qiye_menu flex_2">
+                            <li><a href="javascript:;">企业购</a></li>
+                            <li><a href="javascript:;">商用场景馆</a></li>
+                            <li><a href="javascript:;">工业品</a></li>
+                            <li><a href="javascript:;">丰客多商城</a></li>
+                            <li><a href="javascript:;">礼品卡</a></li>
+                            <li><a href="javascript:;">微信企业购</a></li>
+                            <li><a href="javascript:;">工品优选</a></li>
+                            <li><a href="javascript:;">京东锦礼</a></li>
+                            <li><a href="javascript:;">大中型企业采购</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li class="tab_item">
+                    <a href="javascript:;">客户服务</a>
+                    <div class="user_tab_menu user_tab_3 fuwu">
+                        <ul class="fuwu_top flex_2">
+                            <li>
+                                <h4>客户</h4>
+                            </li>
+                            <li><a href="javascript:;">帮助中心</a></li>
+                            <li><a href="javascript:;">售后服务</a></li>
+                            <li><a href="javascript:;">在线客服</a></li>
+                            <li><a href="javascript:;">意见建议</a></li>
+                            <li><a href="javascript:;">电话客服</a></li>
+                            <li><a href="javascript:;">客服邮箱</a></li>
+                            <li><a href="javascript:;">金融资讯</a></li>
+                            <li><a href="javascript:;">全球售客服</a></li>
+                            <li><a href="javascript:;">企业客服</a></li>
+                        </ul>
+                        <ul class="fuwu_btm flex_2">
+                            <li>
+                                <h4>商户</h4>
+                            </li>
+                            <li><a href="javascript:;">合作招商</a></li>
+                            <li><a href="javascript:;">成长中心</a></li>
+                            <li><a href="javascript:;">商家后台</a></li>
+                            <li><a href="javascript:;">京麦工作台</a></li>
+                            <li><a href="javascript:;">商家帮助</a></li>
+                            <li><a href="javascript:;">规则平台</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li class="tab_item">
+                    <a href="javascript:;">网站导航</a>
+                    <div class="user_tab_menu user_tab_4 fuwu">
+                        <ul class="fuwu_top flex_2">
+                            <li>
+                                <h4>客户</h4>
+                            </li>
+                            <li><a href="javascript:;">帮助中心</a></li>
+                            <li><a href="javascript:;">售后服务</a></li>
+                            <li><a href="javascript:;">在线客服</a></li>
+                            <li><a href="javascript:;">意见建议</a></li>
+                            <li><a href="javascript:;">电话客服</a></li>
+                            <li><a href="javascript:;">客服邮箱</a></li>
+                            <li><a href="javascript:;">金融资讯</a></li>
+                            <li><a href="javascript:;">全球售客服</a></li>
+                            <li><a href="javascript:;">企业客服</a></li>
+                        </ul>
+                        <ul class="fuwu_btm flex_2">
+                            <li>
+                                <h4>商户</h4>
+                            </li>
+                            <li><a href="javascript:;">合作招商</a></li>
+                            <li><a href="javascript:;">成长中心</a></li>
+                            <li><a href="javascript:;">商家后台</a></li>
+                            <li><a href="javascript:;">京麦工作台</a></li>
+                            <li><a href="javascript:;">商家帮助</a></li>
+                            <li><a href="javascript:;">规则平台</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li class="tab_item">
+                    <a href="javascript:;">手机京东</a>
+                    <ul class="user_tab_menu user_tab_5 jd_phone">
+                        <li class="jd_phone_item">
+                            <div class="img_code"></div>
+                            <ul class="right_menu">
+                                <li>
+                                    <h4>手机京东</h4>
+                                </li>
+                                <li><a href="javascript:;" class="red">新人专享大礼包</a></li>
+                                <ul class="items_img">
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="jd_phone_item">
+                            <div class="img_code"></div>
+                            <ul class="right_menu">
+                                <li>
+                                    <h4>关注京东</h4>
+                                </li>
+                                <li>
+                                    <h4>JD.COM</h4>
+                                </li>
+                                <li><a href="javascript:;" class="red">抢5元红包</a></li>
+                            </ul>
+                        </li>
+                        <li class="jd_phone_item">
+                            <div class="img_code"></div>
+                            <ul class="right_menu">
+                                <li>
+                                    <h4>京东金融客户端</h4>
+                                </li>
+                                <li><a href="javascript:;" class="red">新人专享大礼包</a></li>
+                                <ul class="items_img">
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="jd_phone_item">
+                            <div class="img_code"></div>
+                            <ul class="right_menu">
+                                <li>
+                                    <h4>京东健康客户端</h4>
+                                </li>
+                                <ul class="items_img">
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="jd_phone_item">
+                            <div class="img_code"></div>
+                            <ul class="right_menu">
+                                <li>
+                                    <h4>关注京东小程序</h4>
+                                </li>
+                                <li><a href="javascript:;" class="red">新人0.1元购</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 头部个人信息模块 end -->
+
+    <!-- 头部固定搜索栏 start-->
+    <header class="shop_search">
+        <div class="car_w">
+            <button class="icon_img" id="icon_img"></button>
+        </div>
+        <div class="search_item">
+            <div class="left">
+                <input type="text" name="" id="" placeholder="手机">
+                <button>搜索</button>
+            </div>
+        </div>
+    </header>
+    <!-- 头部固定搜索栏 end-->
+
+    <!-- 购物车模块 start -->
+    <div class="c-container">
+        <div class="car_w">
+            <div class="cart-filter-bar">
+                <em>全部商品 <span class="shop_count">7</span></em>
+            </div>
+            <!-- 购物车主要核心区域 -->
+            <div class="cart-warp">
+                <!-- 头部全选模块 -->
+                <div class="cart-thead">
+                    <div class="t-checkbox">
+                        <input type="checkbox" name="" id="" class="checkall"> 全选
+                    </div>
+                    <div class="t-goods">商品</div>
+                    <div class="t-price">单价</div>
+                    <div class="t-num">数量</div>
+                    <div class="t-sum">小计</div>
+                    <div class="t-action">操作</div>
+                </div>
+                <!-- 商品详细模块 -->
+                <div class="cart-item-list">
+                    <div class="shop_list">
+    
+                        <!-- <div class="cart-item check-cart-item">
+                            <div class="p-checkbox">
+                                <input type="checkbox" name="" id="" checked class="j-checkbox">
+                            </div>
+                            <div class="p-goods">
+                                <div class="p-img">
+                                    <img src="uploads/shop_car/1.jpg" alt="">
+                                </div>
+                                <div class="p-msg two_row">【平板电脑 14英寸12G+512G安卓手机全网通话二合一游戏吃鸡网课学生学习小米通用接口韩众 小米灰（12+256G）标准版+定制皮套</div>
+                                <div class="p_taocan">小米灰（12+256G）标准版+定制皮套</div>
+                            </div>
+                            <div class="p-price">￥999.00</div>
+                            <div class="p-num">
+                                <div class="quantity-form">
+                                    <a href="javascript:;" class="decrement">-</a>
+                                    <input type="text" class="itxt" value="1">
+                                    <a href="javascript:;" class="increment">+</a>
+                                </div>
+                            </div>
+                            <div class="p-sum">￥999.00</div>
+                            <div class="p-action"><a href="javascript:;" class="p-action_x">删除</a><br><a href="javascript:;">移入关注</a></div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- 结算模块 -->
+                <div class="cart-floatbar">
+                    <div class="car_w">
+                        <div class="select-all">
+                            <input type="checkbox" name="" id="" class="checkall">全选
+                        </div>
+                        <div class="operation">
+                            <a href="javascript:;" class="remove-batch"> 删除选中的商品</a>
+                            <a href="javascript:;" class="clear-all">清理购物车</a>
+                        </div>
+                        <div class="toolbar-right">
+                            <div class="amount-sum">已经选<em>0</em>件商品</div>
+                            <div class="price-sum">总价： <em>￥0</em></div>
+                            <button class="btn-area">去结算</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 购物车模块 end-->
+
+    <!-- 底部模块 start -->
+    <footer class="jd_car_foot">
+        <div class="jd_foot car_w">
+            <ul class="service_unit ">
+                <li>
+                    <div class="liujiao "></div>
+                    <h2 class="service_name ">品类齐全，轻松购物</h2>
+                </li>
+                <li>
+                    <h2 class="liujiao "></h2>
+                    <h2 class="service_name ">多仓直发，极速配送</h2>
+                </li>
+                <li>
+                    <h2 class="liujiao "></h2>
+                    <h2 class="service_name ">正品行货，精致服务</h2>
+                </li>
+                <li>
+                    <h2 class="liujiao "></h2>
+                    <h2 class="service_name ">天天低价，畅选无忧</h2>
+                </li>
+            </ul>
+            <div class="service_items ">
+                <div class="col ">
+                    <h4>购物指南</h4>
+                    <ul class="item_list ">
+                        <li><a href="javascript:; ">购物流程</a></li>
+                        <li><a href="javascript:; ">会员介绍</a></li>
+                        <li><a href="javascript:; ">生活旅行</a></li>
+                        <li><a href="javascript:; ">常见问题</a></li>
+                        <li><a href="javascript:; ">大家电</a></li>
+                        <li><a href="javascript:; ">联系客服</a></li>
+                    </ul>
+                </div>
+                <div class="col ">
+                    <h4>配送方式</h4>
+                    <ul class="item_list ">
+                        <li><a href="javascript:; ">上门自提</a></li>
+                        <li><a href="javascript:; ">211限时达</a></li>
+                        <li><a href="javascript:; ">配送服务查询</a></li>
+                        <li><a href="javascript:; ">配送费收取标准</a></li>
+                        <li><a href="javascript:; ">海外配送</a></li>
+                    </ul>
+                </div>
+                <div class="col ">
+                    <h4>支付方式</h4>
+                    <ul class="item_list ">
+                        <li><a href="javascript:; ">货到付款</a></li>
+                        <li><a href="javascript:; ">在线支付</a></li>
+                        <li><a href="javascript:; ">分期付款</a></li>
+                        <li><a href="javascript:; ">公司转账</a></li>
+                    </ul>
+                </div>
+                <div class="col ">
+                    <h4>售后服务</h4>
+                    <ul class="item_list ">
+                        <li><a href="javascript:; ">售后政策</a></li>
+                        <li><a href="javascript:; ">价格保护</a></li>
+                        <li><a href="javascript:; ">退款说明</a></li>
+                        <li><a href="javascript:; ">返修/退换货</a></li>
+                        <li><a href="javascript:; ">取消订单</a></li>
+                    </ul>
+                </div>
+                <div class="col ">
+                    <h4>特色服务</h4>
+                    <ul class="item_list ">
+                        <li><a href="javascript:; ">夺宝岛</a></li>
+                        <li><a href="javascript:; ">DIY装机</a></li>
+                        <li><a href="javascript:; ">延保服务</a></li>
+                        <li><a href="javascript:; ">京东E卡</a></li>
+                        <li><a href="javascript:; ">京东通信</a></li>
+                        <li><a href="javascript:; ">京鱼座智能</a></li>
+                    </ul>
+                </div>
+                <div class="jd_ziying ">
+                    <h4>京东自营覆盖区县</h4>
+                    <p>京东已向全国2661个区县提供自<br>营配送服务，支持货到付款、<br>POS机刷卡和售后上门服务。</p>
+                    <a href="javascript:; ">查看详情 ></a>
+                </div>
+            </div>
+            <ul class="kefu">
+                <li>
+                    <a href="javascript:; ">关于我们</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">联系我们</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">联系客服</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">合作招商</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">商家帮助</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">营销中心</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">手机京东</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">友情链接</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">销售联盟</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">京东社区</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">风险监测</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">隐私政策</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">京东公益</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">English Site</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="javascript:; ">Media & IR</a>
+                </li>
+            </ul>
+            <div class="jd_msg ">
+                <div class="row ">
+                    <a href="javascript:; ">京公网安备 11000002000088号</a>
+                    <span>|</span>
+                    <a href="javascript:; ">京ICP备11041704号</a>
+                    <span>|</span>
+                    <a href="javascript:; ">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                    <span>|</span>
+                    <i>新出发京零 字第大120007号</i>
+                </div>
+                <div class="row ">
+                    <i>互联网出版许可证编号新出网证(京)字150号</i>
+                    <span>|</span>
+                    <a href="javascript:; ">出版物经营许可证</a>
+                    <span>|</span>
+                    <a href="javascript:; ">网络文化经营许可证京网文[2020]6112-1201号</a>
+                    <span>|</span>
+                    <i>违法和不良信息举报电话：4006561155</i>
+                </div>
+                <div class="row ">
+                    <a href="javascript:; ">Copyright © 2004 - 2021 京东JD.com 版权所有</a>
+                    <span>|</span>
+                    <i>消费者维权热线：4006067733</i>
+                    <span>| &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <a href="javascript:; ">互经营证照</a>
+                    <span>|</span>
+                    <i>(京)网械平台备字(2018)第00003号</i>
+                    <span>|</span>
+                    <a href="javascript:; ">营业执照</a>
+                </div>
+                <div class="row ">
+                    <div class="foot_loc_img foot_loc_img_1 "></div>
+                    <a href="javascript:; ">Global Site</a>
+                    <span>|</span>
+                    <div class="foot_loc_img foot_loc_img_2 "></div>
+                    <a href="javascript:; ">Сайт России</a>
+                    <span>|</span>
+                    <div class="foot_loc_img foot_loc_img_3 "></div>
+                    <a href="javascript:; ">Situs Indonesia</a>
+                    <span>|</span>
+                    <div class="foot_loc_img foot_loc_img_4 "></div>
+                    <a href="javascript:; ">Sitio de España</a>
+                    <span>|</span>
+                    <div class="foot_loc_img foot_loc_img_5 "></div>
+                    <a href="javascript:; ">เว็บไซต์ประเทศไทย</a>
+                </div>
+                <div class="row ">
+                    <i>京东旗下网站：</i>
+                    <a href="javascript:; ">京东钱包</a>
+                    <span>|</span>
+                    <a href="javascript:; ">京东云</a>
+                </div>
+            </div>
+
+            <ul class="mod_copyright_auth ">
+                <li>
+                    <div class="copyright_img "></div>
+                    <a>可信网站<br>信用评估</a>
+                </li>
+                <li>
+                    <div class="copyright_img "></div>
+                    <a>网络警察<br>提醒你</a>
+                </li>
+                <li>
+                    <div class="copyright_img "></div>
+                    <a class="chengxin ">诚信网站</a>
+                </li>
+                <li>
+                    <div class="copyright_img "></div>
+                    <a>中国互联网<br>举报中心</a>
+                </li>
+                <li>
+                    <div class="copyright_img "></div>
+                    <a>网络举报<br>APP下载</a>
+                </li>
+                <li>
+                    <div class="copyright_img "></div>
+                    <a>经营性网站<br>备案信息</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- 底部模块 end -->
+    <script src="./js/axios.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

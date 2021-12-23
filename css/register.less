@@ -1,0 +1,366 @@
+.icon_link {
+    height: 80px;
+    padding-bottom: 90px;
+    border-bottom: 10px solid #fff;
+    .icon_img {
+        float: left;
+        margin-top: 10px;
+        width: 170px;
+        height: 60px;
+        background: url(../images/login/logo-201305-b.png);
+    }
+    .huanying_register {
+        float: left;
+        width: 110px;
+        height: 40px;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+    .login {
+        float: right;
+        margin-top: 50px;
+        span {
+            font-size: 16px;
+            color: #999;
+            a {
+                color: #e1251a;
+                // margin-left: 5px;
+                &:hover {
+                    color: #ee2222;
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+    }
+}
+
+.agreement {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    border: 3px solid #999;
+    z-index: 999;
+    .top {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        background-color: #f3f3f3;
+        h4 {
+            float: left;
+            padding-left: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+        a {
+            float: right;
+            padding-right: 5px;
+            color: #999;
+            font-size: 28px;
+        }
+    }
+    .protocol-con {
+        width: 100%;
+        height: 450px;
+        overflow: auto;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    .agree {
+        width: 400px;
+        height: 50px;
+        margin-left: 300px;
+        margin-top: 30px;
+        background-color: #ee2222;
+        color: #fff;
+        font-size: 18px;
+    }
+}
+
+.register {
+    height: 670px;
+    .top_buzhou {
+        position: relative;
+        width: 500px;
+        height: 70px;
+        margin-left: 400px;
+        margin-top: 70px;
+        li {
+            float: left;
+            .now_step {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-bottom: 10px;
+                text-align: center;
+                border-radius: 10px;
+                border: 1px solid #999;
+            }
+            .now_step_style {
+                background-color: #33bb44;
+                color: #fff;
+            }
+            .step_tip_style {
+                color:#33bb44;
+            }
+        }
+        .now_progress {
+            width: 80px;
+            text-align: center;
+            margin-right: 80px;
+        }
+        .step_jiantou {
+            position: absolute;
+            left: 58px;
+            top: 5px;
+            width: 124px;
+            height: 10px;
+            background: url(../images/register/reg-icon.png) no-repeat 0 -100px;
+        }
+        .now_progress_two {
+            position: absolute;
+            left: 220px;
+            top: 5px;
+        }
+    }
+    .now_step_caozuo {
+        position: relative;
+        width: 400px;
+        margin-left: 400px;
+        margin-top: 40px;
+        .phone_code {
+            select {
+                width: 100px;
+                height: 50px;
+                padding-left: 10px;
+                line-height: 50px;
+                text-align: center;
+                border: 1px solid #999;
+                font-size: 15px;
+                color: #666;
+            }
+            .code {
+                width: 290px;
+                height: 50px;
+                margin-left: -5px;
+                padding-left: 20px;
+                border: 1px solid #999;
+            }
+            .tip {
+                display: none;
+                position: absolute;
+                top: 17px;
+                left: 355px;
+                width: 16px;
+                height: 16px;
+                background: url(../images/register/icon.png) no-repeat 0 -117px;
+            }
+            .tip_wrong {
+                background: url(../images/register/icon.png) no-repeat -51px -117px;
+            }
+            .geshi_tip {
+                display: none;
+                position: absolute;
+                left: 0px;
+                top: 54px;
+            }
+            .geshi_tip_yanzheng {
+                &::before {
+                    display: inline-block;
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 10px;
+                    background: url(../images/register/icon.png) no-repeat 0 -100px;
+                    vertical-align: text-top;
+                }
+            }
+            .geshi_tip_wrong {
+                &::before {
+                    display: inline-block;
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 10px;
+                    background: url(../images/register/icon.png) no-repeat -16px -100px;
+                    vertical-align: text-top;
+                }
+            }
+        }
+        .btn_yanzheng {
+            // visibility: hidden;
+            width: 390px;
+            height: 50px;
+            margin-top: 30px;
+            line-height: 50px;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #cce8cf;
+            &:hover {
+                border: 1px solid #999;
+            }
+        }
+        .container {
+            display: none;
+            position: absolute;
+            left: 23px;
+            top: -180px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #999;
+            
+        }
+        .code_yanzheng {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 80px;
+            width: 390px;
+            height: 50px;
+            margin-top: 30px;
+            .yanzheng {
+                position: relative;
+                display: inline-block;
+                width: 275px;
+                height: 50px;
+                border: 1px solid #999;
+                label {
+                    display: inline-block;
+                    width: 100px;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 15px;
+                }
+                .phonecode {
+                    display: inline-block;
+                    width: 155px;
+                    height: 45px;
+                    padding-left: 10px;
+                    background-color: #cce8cf;
+                }
+                .i-status {
+                    display: none;
+                    position: absolute;
+                    top: 53px;
+                    left: -3px;
+                    width: 300px;
+                    &::before {
+                        display: inline-block;
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 10px;
+                        background: url(../images/register/icon.png) no-repeat 0 -100px;
+                        vertical-align: text-top;
+                    }
+                }
+                .i-cancel {
+                    display: none;
+                    position: absolute;
+                    top: 15px;
+                    left: 239px;
+                    width: 16px;
+                    height: 16px;
+                    background: url(../images/register/icon.png) no-repeat -51px -117px;
+                }
+            }
+           
+            .btn-phonecode {
+                position: absolute;
+                top: 2px;
+                left: 275px;
+                width: 110px;
+                height: 50px;
+                margin-top: -2px;
+                text-align: center;
+                font-size: 12px;
+                background-color: #cce8cf;
+                &:hover {
+                    border: 1px solid #999;
+                    border-left: 0px solid #000;
+                }
+            }
+            .audio-tip {
+                margin-top: 5px;
+                margin-left: 165px;
+                .get-auth-code {
+                    color: #0066cc;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .next_tip {
+            position: absolute;
+            top: 160px;
+            left: 0;
+            width: 390px;
+            height: 50px;
+            margin-top: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 16px;
+            background-color: #c81623;
+            color: #fff;
+        }
+        .user_class {
+            width: 390px;
+            margin-top: 20px;
+            .qiye_user {
+                position: absolute;
+                left: 0;
+                top: 270px;
+                &::before {
+                    display: inline-block;
+                    content: '';
+                    vertical-align: middle;
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 10px;
+                    background: url(../images/register//reg-icon.png);
+                    background-position: 0 -160px;
+                }
+            }
+            .haiwai_user {
+                position: absolute;
+                right: 0;
+                top: 270px;
+                &::before {
+                    display: inline-block;
+                    content: '';
+                    vertical-align: middle;
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 10px;
+                    background: url(../images/register//reg-icon.png);
+                    background-position: -40px -160px;
+                }
+            }
+        }
+    }
+}
+
+.jd_foot {
+    height: 100px;
+    clear: both;
+    margin-top: 20px;
+    .kefu {
+        display: flex;
+        margin-left: 35px;
+        margin-bottom: 20px;
+        justify-content: center;
+        li {
+            span {
+                margin: 0 10px;
+            }
+        }
+    }
+}

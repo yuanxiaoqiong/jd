@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8" version='1' />
+    <title>京东商城 购物车</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <meta name="description"
+        content="京东JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,京东" />
+    <link rel="icon" href="images/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/shop_goods.css">
+   <!--  <script src="js/jquery-3.5.1.min.js"></script> -->
+</head>
+
+<body>
+    <!-- 头部个人信息模块 start -->
+    <header class="user" id="user">
+        <div class="w1">
+            <div class="jd_shouye">
+                <a href="index.html">京东首页</a>
+            </div>
+
+            <div class="location">
+                <span class="local_name">山西</span>
+                <div class="loca">
+                    <ul class="loca_items">
+                        <li>北京</li>
+                        <li>上海</li>
+                        <li>天津</li>
+                        <li>重庆</li>
+                        <li>河北</li>
+                        <li class="red_loc">山西</li>
+                        <li>河南</li>
+                        <li>辽宁</li>
+                        <li>吉林</li>
+                        <li>黑龙江</li>
+                        <li>内蒙古</li>
+                        <li>江苏</li>
+                        <li>山东</li>
+                        <li>安徽</li>
+                        <li>浙江</li>
+                        <li>福建</li>
+                        <li>湖北</li>
+                        <li>湖南</li>
+                        <li>广东</li>
+                        <li>广西</li>
+                        <li>江西</li>
+                        <li>四川</li>
+                        <li>海南</li>
+                        <li>贵州</li>
+                        <li>云南</li>
+                        <li>西藏</li>
+                        <li>陕西</li>
+                        <li>甘肃</li>
+                        <li>青海</li>
+                        <li>宁夏</li>
+                        <li>新疆</li>
+                        <li>港澳</li>
+                        <li>台湾</li>
+                        <li>钓鱼岛</li>
+                        <li>海外</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="login">
+                <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=https%3A%2F%2Fwww.jd.com%2F"
+                    class="user_login">你好，请登录</a>
+                <a href="https://reg.jd.com/reg/person?ReturnUrl=https%3A//www.jd.com/"
+                    class="register red">&nbsp;&nbsp;免费注册</a>
+            </div>
+            <ul class="user_tab_items">
+                <li class="shuxian">|</li>
+
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li class="tab_item">
+                    <a href="javascript:;" class="current">我的京东</a>
+                    <div class="user_tab_menu user_tab_1">
+                        <ul class="myjd_top flex_2">
+                            <li><a href="javascript:;">待处理订单</a></li>
+                            <li><a href="javascript:;">我的问答</a></li>
+                            <li><a href="javascript:;">返修退换货</a></li>
+                            <li><a href="javascript:;">我的关注</a></li>
+                            <li><a href="javascript:;">降价商品</a></li>
+                        </ul>
+                        <ul class="myjd_btm flex_2">
+                            <li><a href="javascript:;">我的京豆</a></li>
+                            <li><a href="javascript:;">我的优惠券</a></li>
+                            <li><a href="javascript:;">我的白条</a></li>
+                            <li><a href="javascript:;">我的理财</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li>
+                    <a href="javascript:;">京东会员</a>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li class="tab_item">
+                    <a href="javascript:;" class="red">企业采购</a>
+                    <div class="user_tab_menu user_tab_2">
+                        <ul class="qiye_menu flex_2">
+                            <li><a href="javascript:;">企业购</a></li>
+                            <li><a href="javascript:;">商用场景馆</a></li>
+                            <li><a href="javascript:;">工业品</a></li>
+                            <li><a href="javascript:;">丰客多商城</a></li>
+                            <li><a href="javascript:;">礼品卡</a></li>
+                            <li><a href="javascript:;">微信企业购</a></li>
+                            <li><a href="javascript:;">工品优选</a></li>
+                            <li><a href="javascript:;">京东锦礼</a></li>
+                            <li><a href="javascript:;">大中型企业采购</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li class="tab_item">
+                    <a href="javascript:;">客户服务</a>
+                    <div class="user_tab_menu user_tab_3 fuwu">
+                        <ul class="fuwu_top flex_2">
+                            <li>
+                                <h4>客户</h4>
+                            </li>
+                            <li><a href="javascript:;">帮助中心</a></li>
+                            <li><a href="javascript:;">售后服务</a></li>
+                            <li><a href="javascript:;">在线客服</a></li>
+                            <li><a href="javascript:;">意见建议</a></li>
+                            <li><a href="javascript:;">电话客服</a></li>
+                            <li><a href="javascript:;">客服邮箱</a></li>
+                            <li><a href="javascript:;">金融资讯</a></li>
+                            <li><a href="javascript:;">全球售客服</a></li>
+                            <li><a href="javascript:;">企业客服</a></li>
+                        </ul>
+                        <ul class="fuwu_btm flex_2">
+                            <li>
+                                <h4>商户</h4>
+                            </li>
+                            <li><a href="javascript:;">合作招商</a></li>
+                            <li><a href="javascript:;">成长中心</a></li>
+                            <li><a href="javascript:;">商家后台</a></li>
+                            <li><a href="javascript:;">京麦工作台</a></li>
+                            <li><a href="javascript:;">商家帮助</a></li>
+                            <li><a href="javascript:;">规则平台</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li class="tab_item">
+                    <a href="javascript:;">网站导航</a>
+                    <div class="user_tab_menu user_tab_4 fuwu">
+                        <ul class="fuwu_top flex_2">
+                            <li>
+                                <h4>客户</h4>
+                            </li>
+                            <li><a href="javascript:;">帮助中心</a></li>
+                            <li><a href="javascript:;">售后服务</a></li>
+                            <li><a href="javascript:;">在线客服</a></li>
+                            <li><a href="javascript:;">意见建议</a></li>
+                            <li><a href="javascript:;">电话客服</a></li>
+                            <li><a href="javascript:;">客服邮箱</a></li>
+                            <li><a href="javascript:;">金融资讯</a></li>
+                            <li><a href="javascript:;">全球售客服</a></li>
+                            <li><a href="javascript:;">企业客服</a></li>
+                        </ul>
+                        <ul class="fuwu_btm flex_2">
+                            <li>
+                                <h4>商户</h4>
+                            </li>
+                            <li><a href="javascript:;">合作招商</a></li>
+                            <li><a href="javascript:;">成长中心</a></li>
+                            <li><a href="javascript:;">商家后台</a></li>
+                            <li><a href="javascript:;">京麦工作台</a></li>
+                            <li><a href="javascript:;">商家帮助</a></li>
+                            <li><a href="javascript:;">规则平台</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="shuxian">|</li>
+
+                <li class="tab_item">
+                    <a href="javascript:;">手机京东</a>
+                    <ul class="user_tab_menu user_tab_5 jd_phone">
+                        <li class="jd_phone_item">
+                            <div class="img_code"></div>
+                            <ul class="right_menu">
+                                <li>
+                                    <h4>手机京东</h4>
+                                </li>
+                                <li><a href="javascript:;" class="red">新人专享大礼包</a></li>
+                                <ul class="items_img">
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="jd_phone_item">
+                            <div class="img_code"></div>
+                            <ul class="right_menu">
+                                <li>
+                                    <h4>关注京东</h4>
+                                </li>
+                                <li>
+                                    <h4>JD.COM</h4>
+                                </li>
+                                <li><a href="javascript:;" class="red">抢5元红包</a></li>
+                            </ul>
+                        </li>
+                        <li class="jd_phone_item">
+                            <div class="img_code"></div>
+                            <ul class="right_menu">
+                                <li>
+                                    <h4>京东金融客户端</h4>
+                                </li>
+                                <li><a href="javascript:;" class="red">新人专享大礼包</a></li>
+                                <ul class="items_img">
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="jd_phone_item">
+                            <div class="img_code"></div>
+                            <ul class="right_menu">
+                                <li>
+                                    <h4>京东健康客户端</h4>
+                                </li>
+                                <ul class="items_img">
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"></a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="jd_phone_item">
+                            <div class="img_code"></div>
+                            <ul class="right_menu">
+                                <li>
+                                    <h4>关注京东小程序</h4>
+                                </li>
+                                <li><a href="javascript:;" class="red">新人0.1元购</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 头部个人信息模块 end -->
+
+    <!-- 头部固定搜索栏 start-->
+    <header class="head_search">
+        <div class="w1">
+            <div class="icon_img" id="icon_img"></div>
+            <div class="total_class">
+                <p>全部分类</p>
+                <div class="sanjiao"></div>
+                <div class="class_tab">
+                    <ul class="shop_items_menu">
+                        <li><a href="javascript:;">家用电器</a></li>
+                        <li>
+                            <a href="javascript:;">手机</a> <span>/</span>
+                            <a href="javascript:;">运营商</a> <span>/</span>
+                            <a href="javascript:;">数码</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">电脑</a> <span>/</span>
+                            <a href="javascript:;">办公</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">家居</a> <span>/</span>
+                            <a href="javascript:;">家具</a> <span>/</span>
+                            <a href="javascript:;">家装</a> <span>/</span>
+                            <a href="javascript:;">厨具</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">男装</a> <span>/</span>
+                            <a href="javascript:;">女装</a> <span>/</span>
+                            <a href="javascript:;">童装</a> <span>/</span>
+                            <a href="javascript:;">内衣</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">美妆</a> <span>/</span>
+                            <a href="javascript:;">个护清洁</a> <span>/</span>
+                            <a href="javascript:;">宠物</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">女鞋</a> <span>/</span>
+                            <a href="javascript:;">箱包</a> <span>/</span>
+                            <a href="javascript:;">钟表</a> <span>/</span>
+                            <a href="javascript:;">珠宝</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">男鞋</a> <span>/</span>
+                            <a href="javascript:;">户外</a> <span>/</span>
+                            <a href="javascript:;">运动</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">房产</a> <span>/</span>
+                            <a href="javascript:;">汽车</a> <span>/</span>
+                            <a href="javascript:;">汽车用品</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="javascript:;">母婴</a> <span>/</span>
+                            <a href="javascript:;">玩具汽车</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="javascript:;">食品</a> <span>/</span>
+                            <a href="javascript:;">酒类</a> <span>/</span>
+                            <a href="javascript:;">生鲜</a> <span>/</span>
+                            <a href="javascript:;">特产</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="javascript:;">艺术</a> <span>/</span>
+                            <a href="javascript:;">礼品鲜花</a> <span>/</span>
+                            <a href="javascript:;">农资绿植</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="javascript:;">医药保健</a> <span>/</span>
+                            <a href="javascript:;">计生情趣</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="javascript:;">图书</a> <span>/</span>
+                            <a href="javascript:;">文娱</a> <span>/</span>
+                            <a href="javascript:;">教育</a> <span>/</span>
+                            <a href="javascript:;">电子书</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="javascript:;">机票</a> <span>/</span>
+                            <a href="javascript:;">酒店</a> <span>/</span>
+                            <a href="javascript:;">旅游</a> <span>/</span>
+                            <a href="javascript:;">生活</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">理财</a> <span>/</span>
+                            <a href="javascript:;">众筹</a> <span>/</span>
+                            <a href="javascript:;">白条</a> <span>/</span>
+                            <a href="javascript:;">保险</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">安装</a> <span>/</span>
+                            <a href="javascript:;">维修</a> <span>/</span>
+                            <a href="javascript:;">清洗</a> <span>/</span>
+                            <a href="javascript:;">二手</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">工业品</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search_box">
+                <input type="text" name="" id="">
+                <button class="quanzhan">搜全站</button>
+                <button class="bendian">搜本店</button>
+                <ul class="search_list">
+                    <li><a href="javascript:;">X50 Pro</a></li>
+                    <li><a href="javascript:;">魅族17</a></li>
+                    <li><a href="javascript:;">OPPO</a></li>
+                    <li><a href="javascript:;">华为</a></li>
+                    <li><a href="javascript:;">氮化镓</a></li>
+                    <li><a href="javascript:;">三星Note10+</a></li>
+                    <li><a href="javascript:;">iPhone 11</a></li>
+                </ul>
+            </div>
+            <div class="shop_car">
+                <div class="num">6</div>
+                <span><a href="shopcar.html">我的购物车</a></span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&gt;</span>
+            </div>
+        </div>
+    </header>
+    <!-- 头部固定搜索栏 end-->
+
+    <!-- 商店背景 start -->
+    <div class="shop_bg">
+        <div class="bg w"></div>
+    </div>
+    <!-- 商店背景 end -->
+
+    <!-- 店铺导航tab栏 start -->
+    <nav class="nav_tab">
+        <div class="w1">
+            <div class="nav_total">
+                <h2 class="red_bg total">查看全部商品</h2>
+                <div class="item_toatl_msg">
+                    <div class="item_menu">
+                        <div class="row">
+                            <h4>Mate系列</h4>
+                            <a href="javascript:;">华为 Mate40 Pro</a>
+                            <a href="javascript:;">华为 Mate40 Rs 保时捷设计</a>
+                            <a href="javascript:;">华为 Mate40 Pro+</a>
+                            <a href="javascript:;">华为 Mate 30E Pro 5G</a>
+                            <a href="javascript:;">华为 Mate 30 Pro</a>
+                        </div>
+                        <div class="row">
+                            <h4>P系列</h4>
+                            <a href="javascript:;">HUAWEI P40 Pro+</a>
+                            <a href="javascript:;">HUAWEI P40 Pro</a>
+                            <a href="javascript:;">HUAWEI P40</a>
+                            <a href="javascript:;">HUAWEI P30</a>
+                            <a href="javascript:;">HUAWEI P30 Pro</a>
+                        </div>
+                        <div class="row">
+                            <h4>nova/麦芒系列</h4>
+                            <a href="javascript:;">nova 7 Pro 5G</a>
+                            <a href="javascript:;">nova 7 5G</a>
+                            <a href="javascript:;">nova 7 SE 5G</a>
+                            <a href="javascript:;">nova 6 5G</a>
+                            <a href="javascript:;">nova 6</a>
+                            <a href="javascript:;">nova 6 SE</a>
+                            <a href="javascript:;">nova 5z</a>
+                            <a href="javascript:;">nova 5i pro</a>
+                            <a href="javascript:;">nova 5 pro</a>
+                            <a href="javascript:;">nova 5i</a>
+                        </div>
+                        <div class="row">
+                            <h4>麦芒9畅享系列</h4>
+                            <a href="javascript:;">畅享 20</a>
+                            <a href="javascript:;">畅享20 Plus</a>
+                            <a href="javascript:;">畅享 20Pro</a>
+                            <a href="javascript:;">畅享Z 5G</a>
+                            <a href="javascript:;">畅享 10e</a>
+                            <a href="javascript:;">畅享 10S</a>
+                            <a href="javascript:;">畅享10</a>
+                            <a href="javascript:;">畅享10 Plus</a>
+                        </div>
+                        <div class="row">
+                            <h4>智慧屏</h4>
+                            <a href="javascript:;">智慧屏S系列</a>
+                            <a href="javascript:;">智慧屏V65</a>
+                            <a href="javascript:;">智慧屏V75</a>
+                            <a href="javascript:;">智慧屏V55i</a>
+                            <a href="javascript:;">智慧屏X65</a>
+                            <a href="javascript:;">智慧屏SE系列</a>
+                        </div>
+                        <div class="row">
+                            <h4>显示器</h4>
+                            <a href="javascript:;">MateView</a>
+                            <a href="javascript:;">MateView GT</a>
+                            <a href="javascript:;">华为显示器23.8</a>
+                        </div>
+                        <div class="row">
+                            <h4>笔记本</h4>
+                            <a href="javascript:;">MateBook X</a>
+                            <a href="javascript:;">MateBook X Pro</a>
+                            <a href="javascript:;">MateBook D 15</a>
+                            <a href="javascript:;">MateBook D 14</a>
+                            <a href="javascript:;">MateBook 14</a>
+                            <a href="javascript:;">MateBook 13</a>
+                        </div>
+                        <div class="row">
+                            <h4>平板</h4>
+                            <a href="javascript:;">MatePad 10.8</a>
+                            <a href="javascript:;">MatePad 5G</a>
+                            <a href="javascript:;">MatePad</a>
+                            <a href="javascript:;"> Matepad Pro</a>
+                            <a href="javascript:;">畅享 2</a>
+                            <a href="javascript:;">平板M6 高能</a>
+                            <a href="javascript:;">平板M6 8.4</a>
+                        </div>
+                        <div class="row">
+                            <h4>路由器</h4>
+                            <a href="javascript:;">路由Q2 Pro</a>
+                            <a href="javascript:;">路由WS200四核版</a>
+                            <a href="javascript:;">路由WS200增强版</a>
+                            <a href="javascript:;">华为移动路由</a>
+                            <a href="javascript:;">路由 A2</a>
+                            <a href="javascript:;">路由WS5106</a>
+                            <a href="javascript:;">路由5G随行WiFi</a>
+                        </div>
+                        <div class="row">
+                            <h4>穿戴</h4>
+                            <a href="javascript:;">WATCH GT2</a>
+                            <a href="javascript:;">华为手环 B6</a>
+                            <a href="javascript:;">华为儿童手表 4X</a>
+                            <a href="javascript:;">华为手环4 Pro</a>
+                            <a href="javascript:;">华为手环3Pro</a>
+                            <a href="javascript:;">华为儿童手表3Pro</a>
+                            <a href="javascript:;">VR眼镜</a>
+                            <a href="javascript:;">WATCH GT 2e</a>
+                        </div>
+                        <div class="row">
+                            <h4>华为智选</h4>
+                            <a href="javascript:;">智能跑步机</a>
+                            <a href="javascript:;">车载智慧屏</a>
+                            <a href="javascript:;">华为AI音箱</a>
+                            <a href="javascript:;">空气净化器</a>
+                            <a href="javascript:;">智能台灯</a>
+                            <a href="javascript:;">智能牙刷</a>
+                            <a href="javascript:;">AI摄像头</a>
+                            <a href="javascript:;">安防套装</a>
+                            <a href="javascript:;">智能加湿器</a>
+                            <a href="javascript:;">香薰灯</a>
+                            <a href="javascript:;">保温水杯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="nav_tab_list">
+            <li class="nav_tab_item">
+                <h2>首页</h2>
+                <div class="item_tab_msg">
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>P系列</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_1"> </div>
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>Mate系列</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_2"></div>
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>nova系列</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_3"></div>
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>畅享系列</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_4"></div>
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>智慧屏</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_5"></div>
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>显示器</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_6"></div>
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>笔记本</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_7"></div>
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>平板</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_8"></div>
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>路由器</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_9"></div>
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>穿戴</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_10"></div>
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>华为智选</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_11"></div>
+                </div>
+            </li>
+            <li class="nav_tab_item">
+                <h2>音频配件</h2>
+                <div class="item_tab_msg">
+                    <div class="w_phone w_phone_12"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- 店铺导航tab栏 end -->
+
+    <!-- 商品导航栏 start -->
+    <nav class="goods_msg">
+        <div class="w">
+            <div class="left">
+                <a href="javsscript:;">手机通讯</a>
+                <i>&gt;</i>
+                <a href="javsscript:;">手机</a>
+                <i>&gt;</i>
+                <a href="javsscript:;">手机</a>
+                <i>&gt;</i>
+                <div class="huawei_item">
+                    <a href="javsscript:;">华为（HUAWEI）</a>
+                    <div class="sanjiao"></div>
+                    <div class="more_goods">
+                        <div class="shop_item">
+                            <div class="col">
+                                <div class="left">
+                                    <img src="images/shop_goods/huawei_nav/1.jpg" alt="">
+                                </div>
+                                <div class="right">
+                                    <a href="javascript:;" class="two_row">华为 HUAWEI Mate 40 Pro麒麟9000 SoC芯片 超感知徕卡电影影像
+                                        有线无线双超级快充8GB+128GB秘银色5G全网通套餐一（无充电器和数据线）</a>
+                                    <h4>￥6299.00</h4>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="left">
+                                    <img src="images/shop_goods/huawei_nav/2.jpg" alt="">
+                                </div>
+                                <div class="right">
+                                    <a href="javascript:;" class="two_row">华为畅享20 SE【现货当天发】全网通智能手机 幻夜黑 8G+128G 送碎屏险</a>
+                                    <h4>￥1899.00</h4>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="left">
+                                    <img src="images/shop_goods/huawei_nav/3.jpg" alt="">
+                                </div>
+                                <div class="right">
+                                    <a href="javascript:;" class="two_row">华为 HUAWEI Mate 40 RS 保时捷设计麒麟9000芯片 超感知徕卡电影五摄
+                                        8GB+256GB陶瓷黑5G全网通手机</a>
+                                    <h4>￥10999.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other_pinpai">
+                            <a href="javsscript:;">华为（HUAWEI</a>
+                            <a href="javsscript:;">Apple</a>
+                            <a href="javsscript:;">小米（MI）</a>
+                            <a href="javsscript:;">vivo</a>
+                            <a href="javsscript:;">OPPO</a>
+                            <a href="javsscript:;">飞利浦（PHILIPS）</a>
+                            <a href="javsscript:;">天语（K-TOUCH)</a>
+                            <a href="javsscript:;">一加 </a>
+                            <a href="javsscript:;">诺基亚（NOKIA）</a>
+                            <a href="javsscript:;">更多>></a>
+                        </div>
+                    </div>
+                </div>
+                <i>&gt;</i>
+                <a href="javsscript:;">华为Mate 40 Pro</a>
+            </div>
+            <div class="right">
+                <div class="ziying">自营</div>
+                <div class="shop">
+                    <a href="javsscript:;" class="shop">华为京东自营官方旗舰店</a>
+                    <img src="images/shopcar_kefu.png" alt="">
+                    <a href="javsscript:;">联系客服</a>
+                    <img src="" alt="">
+                    <div class="guanzhu">
+                        <div class="bg"></div>
+                        <a href="javsscript:;">关注店铺</a>
+                    </div>
+                    <div class="shop_msg">
+                        <i>客服</i>
+                        <div class="kefu">
+                            <a href="javsscript:;">联系客服</a>
+                        </div>
+                        <div class="code"></div>
+                        <span class="phone_xidan">手机下单</span>
+                        <div class="btm">
+                            <div class="jindian">
+                                <a href="javsscript:;">进店逛逛</a>
+                            </div>
+                            <div class="dianpu">
+                                <a href="javsscript:;">关注店铺</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- 商品导航栏 end -->
+
+    <!-- 商品详情 start -->
+    <div class="product_details">
+        <div class="left">
+            <div class="mid_photo">
+                <img src="images/shop_goods/product_details/mid/1.jpg" alt="" class="mid_img" style="display: block;">
+                <img src="images/shop_goods/product_details/mid/2.jpg" alt="" class="mid_img">
+                <img src="images/shop_goods/product_details/mid/3.jpg" alt="" class="mid_img">
+                <img src="images/shop_goods/product_details/mid/4.jpg" alt="" class="mid_img">
+                <img src="images/shop_goods/product_details/mid/5.jpg" alt="" class="mid_img">
+                <img src="images/shop_goods/product_details/mid/6.jpg" alt="" class="mid_img">
+                <img src="images/shop_goods/product_details/mid/7.jpg" alt="" class="mid_img">
+                <img src="images/shop_goods/product_details/mid/8.jpg" alt="" class="mid_img">
+                <img src="images/shop_goods/product_details/mid/9.jpg" alt="" class="mid_img">
+                <img src="images/shop_goods/product_details/mid/10.jpg" alt="" class="mid_img">
+                <div class="mask"></div>
+                <div class="fajing"></div>
+                <div class="big_photo">
+                    <img src="images/shop_goods/product_details/big/1.jpg" alt="" class="big_img"
+                        style="display: block;">
+                    <img src="images/shop_goods/product_details/big/2.jpg" alt="" class="big_img">
+                    <img src="images/shop_goods/product_details/big/3.jpg" alt="" class="big_img">
+                    <img src="images/shop_goods/product_details/big/4.jpg" alt="" class="big_img">
+                    <img src="images/shop_goods/product_details/big/5.jpg" alt="" class="big_img">
+                    <img src="images/shop_goods/product_details/big/6.jpg" alt="" class="big_img">
+                    <img src="images/shop_goods/product_details/big/7.jpg" alt="" class="big_img">
+                    <img src="images/shop_goods/product_details/big/8.jpg" alt="" class="big_img">
+                    <img src="images/shop_goods/product_details/big/9.jpg" alt="" class="big_img">
+                    <img src="images/shop_goods/product_details/big/10.jpg" alt="" class="big_img">
+                </div>
+            </div>
+            <div class="preview_list">
+                <input type="button" value="" class="arrow_prev">
+                <ul class="list_item">
+                    <div class="list_item_menu">
+                        <li class="tab_current">
+                            <img src="images/shop_goods/product_details/little/1.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/product_details/little/2.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/product_details/little/3.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/product_details/little/4.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/product_details/little/5.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/product_details/little/6.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/product_details/little/7.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/product_details/little/8.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/product_details/little/9.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/product_details/little/10.jpg" alt="">
+                        </li>
+                    </div>
+
+                </ul>
+                <input type="button" value="" class="arrow_next">
+            </div>
+            <br>
+            <div class="guanzhu">
+                <i></i>
+                <a href="javascript:;">关注</a>
+            </div>
+            <div class="fenxiang">
+                <i></i>
+                <a href="javascript:;">分享</a>
+            </div>
+            <div class="duibi">
+                <i></i>
+                <a href="javascript:;">对比</a>
+            </div>
+            <div class="jubao">
+                <a href="javascript:;">举报</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="goods_totle">
+                <div class="mendian">门店有售</div>
+                <h2>华为 HUAWEI Mate 40 Pro麒麟9000 SoC芯片 超感知徕卡电影影像 有线无线双超级快充8GB+128GB釉白色5G全网通套餐一（无充电器和数据线）</h2>
+            </div>
+            <h4 class="intro">【华为Mate40Pro无充版本】5nm麒麟芯片!超感知徕卡电影影像!双线超级快充!隔空操控屏!华为手机热销爆款，限量抢购，猛戳》》》<i>查看</i>></h4>
+            <div class="bg_618"></div>
+            <div class="price">
+                <div class="jd_jia">京 东 价</div>
+                <div class="count"><i>￥</i>6299.00</div>
+                <a href="javascript:;" class="jiangjia">降价通知</a>
+                <div class="pingjia">
+                    <i>累计评价</i>
+                    <a href="javascript:;" class="num">20万+</a>
+                </div>
+            </div>
+            <div class="cuxiao">
+                <div class="cx">促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销</div>
+                <div class="zp">赠品</div>
+                <img src="images/shop_goods/zp.jpg" alt="" class="zp_img">
+                <div class="count">×1</div>
+                <span>（赠完即止）</span>
+            </div>
+            <div class="zengzhi">
+                <p>增值业务</p>
+                <div class="zy_msg">
+                    <div class="zy_img"></div>
+                    <a href="javascript:;">高价回收，极速到账</a>
+                </div>
+            </div>
+            <div class="peisong">
+                <i>配 送 至</i>
+                <div class="i_loc">辽宁沈阳市苏家屯区白清寨乡</div>
+                <span>可配货</span>
+                <div class="zhichi">支持</div>
+                <ul>
+                    <li>可配送港澳台</li>
+                    <li><a href="javascript:;">99元免基础运费</a></li>
+                    <li><a href="javascript:;">365天原厂维修</a></li>
+                    <li><a href="javascript:;">免举证退换货</a></li>
+                </ul>
+            </div>
+            <div class="jd_wuliu">
+                <div class="jd_img"></div>
+                <div class="wuliu_item">
+                    <a href="javascript:;">预约送货</a>
+                    <i>|</i>
+                    <a href="javascript:;">部分收货</a>
+                    <i>|</i>
+                    <a href="javascript:;">送货上门</a>
+                </div>
+            </div>
+            <div class="fahuo">
+                由<i class="red"> 京东 </i>发货, 并提供售后服务. 有货（外地跨区调货）,暂免调货服务费. 18:00前下单，预计06月07日(周一)送达
+            </div>
+            <div class="zhongliang">
+                <i>重&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量</i>
+                <span>0.46kg</span>
+            </div>
+            <div class="taocan">
+                <div class="color">
+                    <i>选择颜色</i>
+                    <ul>
+                        <li>
+                            <img src="images/shop_goods/color/1.jpg" alt="">
+                            <i>亮黑色</i>
+                        </li>
+                        <li class="goods_current">
+                            <img src="images/shop_goods/color/2.jpg" alt="">
+                            <i>釉白色</i>
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/color/3.jpg" alt="">
+                            <i>秘银色</i>
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/color/4.jpg" alt="">
+                            <i>夏日胡杨</i>
+                        </li>
+                        <li>
+                            <img src="images/shop_goods/color/5.jpg" alt="">
+                            <i>秋日胡杨</i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banben">
+                    <i>选择版本</i>
+                    <ul>
+                        <li class="goods_current">8GB+128GB</li>
+                        <li>8GB+256GB</li>
+                    </ul>
+                </div>
+                <div class="banben_5G">
+                    <i>选择版本</i>
+                    <ul>
+                        <li class="goods_current">5G (无充版)</li>
+                        <li>5G (有充版)</li>
+                        <li>4G (有充版)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qianggou">
+                <div class="num_box">
+                    <!-- <input type="text" name="" id="" value="1" class="count"> -->
+                    <div class="count">1</div>
+                    <button class="add" onclick="Goods.addCart(goods.id,1)">+</button>
+                    <button class="minus">-</button>
+                </div>
+                <h2>抢购</h2>
+            </div>
+            <div class="tishi">
+                温馨提示 ·支持7天无理由退货
+            </div>
+        </div>
+
+    </div>
+    <!-- 商品详情 end -->
+
+    <!-- 店长推荐 start -->
+    <div class="recommend w">
+        <div class="top_title">
+            <h4>店长推荐</h4>
+        </div>
+        <ul class="rec_list">
+            <li>
+                <div class="shop_img">
+                    <img src="images/shop_goods/recommend/1.jpg" alt="">
+                    <div class="goods_msg">
+                        <a href="javascript:;" class="two_row">华为智慧屏V65i 65英寸 HEGE-560B 鸿蒙HarmonyOS 4K全面屏智能电视机 AI升降摄像头
+                            4GB+32GB 星际黑</a>
+                    </div>
+                </div>
+                <div class="price">￥5999.00</div>
+            </li>
+            <li>
+                <div class="shop_img">
+                    <img src="images/shop_goods/recommend/2.jpg" alt="">
+                    <div class="goods_msg">
+                        <a href="javascript:;" class="two_row">华为（HUAWEI）显示器23.8英寸 1920×1080全高清全面屏 IPS 75Hz 莱茵低蓝光无频闪
+                            俯仰调节</a>
+                    </div>
+                </div>
+                <div class="price">￥1099.00</div>
+            </li>
+            <li>
+                <div class="shop_img">
+                    <img src="images/shop_goods/recommend/3.jpg" alt="">
+                    <div class="goods_msg">
+                        <a href="javascript:;" class="two_row">华为笔记本电脑 MateBook X 2020款 13英寸 十代酷睿i5 16G+512G
+                            3K触控全面屏/时尚轻薄本 冰霜银</a>
+                    </div>
+                </div>
+                <div class="price">￥8999.00</div>
+            </li>
+            <li>
+                <div class="shop_img">
+                    <img src="images/shop_goods/recommend/4.jpg" alt="">
+                    <div class="goods_msg">
+                        <a href="javascript:;" class="two_row">华为平板MatePad Pro 10.8英寸麒麟990影音娱乐游戏办公学习全面屏平板电脑6GB+128GB
+                            WIFI（夜阑灰）</a>
+                    </div>
+                </div>
+                <div class="price">￥3299.00</div>
+            </li>
+            <li>
+                <div class="shop_img">
+                    <img src="images/shop_goods/recommend/5.jpg" alt="">
+                    <div class="goods_msg">
+                        <a href="javascript:;" class="two_row">HUAWEI WATCH GT2 华为手表 运动智能手表 两周长续航/蓝牙通话/血氧检测/麒麟芯片 华为gt2
+                            46mm 曜石黑</a>
+                    </div>
+                </div>
+                <div class="price">￥1488.00</div>
+            </li>
+            <li>
+                <div class="shop_img">
+                    <img src="images/shop_goods/recommend/6.jpg" alt="">
+                    <div class="goods_msg">
+                        <a href="javascript:;" class="two_row">华为HUAWEI FreeBuds Pro 主动降噪真无线蓝牙耳机/入耳式耳机/环境音/人声透传/双连接/有线充版
+                            （陶瓷白）</a>
+                    </div>
+                </div>
+                <div class="price">￥1099.00</div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- 店长推荐 end -->
+
+    <!-- 店铺信息 start -->
+    <div class="shop_msg w">
+        <div class="left">
+            <h2>华为京东自营官方旗舰</h2>
+            <div class="jindian"><a href="javascript:;">进店逛逛</a></div>
+            <div class="dianpu"><a href="javascript:;">关注店铺</a></div>
+        </div>
+        <div class="right">
+            <ul class="items">
+                <li class="current"><a href="javascript:;">商品介绍</a></li>
+                <li><a href="javascript:;">规格与包装</a></li>
+                <li><a href="javascript:;">售后保障</a></li>
+                <li><a href="javascript:;">商品评价（20万+）</a></li>
+                <li><a href="javascript:;">手机社区</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 店铺信息 end -->
+
+    <!-- 底部模块 start -->
+    <footer class="jd_foot w ">
+        <ul class="service_unit ">
+            <li>
+                <div class="liujiao "></div>
+                <h2 class="service_name ">品类齐全，轻松购物</h2>
+            </li>
+            <li>
+                <h2 class="liujiao "></h2>
+                <h2 class="service_name ">多仓直发，极速配送</h2>
+            </li>
+            <li>
+                <h2 class="liujiao "></h2>
+                <h2 class="service_name ">正品行货，精致服务</h2>
+            </li>
+            <li>
+                <h2 class="liujiao "></h2>
+                <h2 class="service_name ">天天低价，畅选无忧</h2>
+            </li>
+        </ul>
+        <div class="service_items ">
+            <div class="col ">
+                <h4>购物指南</h4>
+                <ul class="item_list ">
+                    <li><a href="javascript:; ">购物流程</a></li>
+                    <li><a href="javascript:; ">会员介绍</a></li>
+                    <li><a href="javascript:; ">生活旅行</a></li>
+                    <li><a href="javascript:; ">常见问题</a></li>
+                    <li><a href="javascript:; ">大家电</a></li>
+                    <li><a href="javascript:; ">联系客服</a></li>
+                </ul>
+            </div>
+            <div class="col ">
+                <h4>配送方式</h4>
+                <ul class="item_list ">
+                    <li><a href="javascript:; ">上门自提</a></li>
+                    <li><a href="javascript:; ">211限时达</a></li>
+                    <li><a href="javascript:; ">配送服务查询</a></li>
+                    <li><a href="javascript:; ">配送费收取标准</a></li>
+                    <li><a href="javascript:; ">海外配送</a></li>
+                </ul>
+            </div>
+            <div class="col ">
+                <h4>支付方式</h4>
+                <ul class="item_list ">
+                    <li><a href="javascript:; ">货到付款</a></li>
+                    <li><a href="javascript:; ">在线支付</a></li>
+                    <li><a href="javascript:; ">分期付款</a></li>
+                    <li><a href="javascript:; ">公司转账</a></li>
+                </ul>
+            </div>
+            <div class="col ">
+                <h4>售后服务</h4>
+                <ul class="item_list ">
+                    <li><a href="javascript:; ">售后政策</a></li>
+                    <li><a href="javascript:; ">价格保护</a></li>
+                    <li><a href="javascript:; ">退款说明</a></li>
+                    <li><a href="javascript:; ">返修/退换货</a></li>
+                    <li><a href="javascript:; ">取消订单</a></li>
+                </ul>
+            </div>
+            <div class="col ">
+                <h4>特色服务</h4>
+                <ul class="item_list ">
+                    <li><a href="javascript:; ">夺宝岛</a></li>
+                    <li><a href="javascript:; ">DIY装机</a></li>
+                    <li><a href="javascript:; ">延保服务</a></li>
+                    <li><a href="javascript:; ">京东E卡</a></li>
+                    <li><a href="javascript:; ">京东通信</a></li>
+                    <li><a href="javascript:; ">京鱼座智能</a></li>
+                </ul>
+            </div>
+            <div class="jd_ziying ">
+                <h4>京东自营覆盖区县</h4>
+                <p>京东已向全国2661个区县提供自<br>营配送服务，支持货到付款、<br>POS机刷卡和售后上门服务。</p>
+                <a href="javascript:; ">查看详情 ></a>
+            </div>
+        </div>
+        <ul class="kefu ">
+            <li>
+                <a href="javascript:; ">关于我们</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">联系我们</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">联系客服</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">合作招商</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">商家帮助</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">营销中心</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">手机京东</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">友情链接</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">销售联盟</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">京东社区</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">风险监测</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">隐私政策</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">京东公益</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">English Site</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:; ">Media & IR</a>
+            </li>
+        </ul>
+        <div class="jd_msg ">
+            <div class="row ">
+                <a href="javascript:; ">京公网安备 11000002000088号</a>
+                <span>|</span>
+                <a href="javascript:; ">京ICP备11041704号</a>
+                <span>|</span>
+                <a href="javascript:; ">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                <span>|</span>
+                <i>新出发京零 字第大120007号</i>
+            </div>
+            <div class="row ">
+                <i>互联网出版许可证编号新出网证(京)字150号</i>
+                <span>|</span>
+                <a href="javascript:; ">出版物经营许可证</a>
+                <span>|</span>
+                <a href="javascript:; ">网络文化经营许可证京网文[2020]6112-1201号</a>
+                <span>|</span>
+                <i>违法和不良信息举报电话：4006561155</i>
+            </div>
+            <div class="row ">
+                <a href="javascript:; ">Copyright © 2004 - 2021 京东JD.com 版权所有</a>
+                <span>|</span>
+                <i>消费者维权热线：4006067733</i>
+                <span>| &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <a href="javascript:; ">互经营证照</a>
+                <span>|</span>
+                <i>(京)网械平台备字(2018)第00003号</i>
+                <span>|</span>
+                <a href="javascript:; ">营业执照</a>
+            </div>
+            <div class="row ">
+                <div class="foot_loc_img foot_loc_img_1 "></div>
+                <a href="javascript:; ">Global Site</a>
+                <span>|</span>
+                <div class="foot_loc_img foot_loc_img_2 "></div>
+                <a href="javascript:; ">Сайт России</a>
+                <span>|</span>
+                <div class="foot_loc_img foot_loc_img_3 "></div>
+                <a href="javascript:; ">Situs Indonesia</a>
+                <span>|</span>
+                <div class="foot_loc_img foot_loc_img_4 "></div>
+                <a href="javascript:; ">Sitio de España</a>
+                <span>|</span>
+                <div class="foot_loc_img foot_loc_img_5 "></div>
+                <a href="javascript:; ">เว็บไซต์ประเทศไทย</a>
+            </div>
+            <div class="row ">
+                <i>京东旗下网站：</i>
+                <a href="javascript:; ">京东钱包</a>
+                <span>|</span>
+                <a href="javascript:; ">京东云</a>
+            </div>
+        </div>
+
+        <ul class="mod_copyright_auth ">
+            <li>
+                <div class="copyright_img "></div>
+                <a>可信网站<br>信用评估</a>
+            </li>
+            <li>
+                <div class="copyright_img "></div>
+                <a>网络警察<br>提醒你</a>
+            </li>
+            <li>
+                <div class="copyright_img "></div>
+                <a class="chengxin ">诚信网站</a>
+            </li>
+            <li>
+                <div class="copyright_img "></div>
+                <a>中国互联网<br>举报中心</a>
+            </li>
+            <li>
+                <div class="copyright_img "></div>
+                <a>网络举报<br>APP下载</a>
+            </li>
+            <li>
+                <div class="copyright_img "></div>
+                <a>经营性网站<br>备案信息</a>
+            </li>
+        </ul>
+    </footer>
+    <!-- 底部模块 end -->
+    <script src="./js/axios.js"></script>
+   
+    <script src="./js/shop_goods.js"></script>
+    
+</body>
+
+</html>
